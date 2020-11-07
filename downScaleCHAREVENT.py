@@ -178,5 +178,5 @@ while left < len(df_51003_lst):
     left = right
 
 df_out = pd.DataFrame(data=formatted_arr, columns=column_labels)
-df_out.to_csv("./vitalSignFormatted.csv")
-# df_out.to_csv("./TEST.csv")
+df_out.to_csv("./vitalSignFormatted.csv", index=False)
+# df_out.to_csv("./TEST.csv", index=False)

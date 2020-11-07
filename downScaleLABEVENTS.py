@@ -104,7 +104,7 @@ for i, curr_subjectID in enumerate(subjectid_valid):
 
 formatted_arr = np.array(formatted_arr)
 df_out = pd.DataFrame(data=formatted_arr, columns=final_column_labels)
-df_out.to_csv("./labeventsOutput.csv")
+df_out.to_csv("./labeventsOutput.csv", index=False)
 
 print("\nAfter processing......\n")
 print(formatted_arr.shape)
